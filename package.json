@@ -1,10 +1,12 @@
 {
   "type": "module",
   "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
     "dotenv": "*",
+    "node-fetch": "^3.3.2",
     "serpapi": "*"
   },
   "scripts": {
-    "start": "node basic_example.js"
+    "start": "node callApi.js"
   }
 }

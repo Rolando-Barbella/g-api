@@ -14,7 +14,7 @@ const apiKey = process.env.API_KEY;
 
 const params = {
   engine: "google",
-  q: "Coffee",
+  q: "Travel",
   api_key: apiKey,
 };
 
@@ -27,5 +27,5 @@ getJson(params, (json) => console.log(json["organic_results"]));
 
 // Use global config
 config.api_key = apiKey;
-const response2 = await getJson({ engine: "google", q: "Coffee" });
+const response2 = await getJson({ engine: "google", q: "travel" });
 console.log(response2["organic_results"]);
